@@ -1,0 +1,2 @@
+APP_DISPLAY_NAME = Tic Tac Toe
+PRODUCT_BUNDLE_IDENTIFIER = dev.harness.app.tictactoe
