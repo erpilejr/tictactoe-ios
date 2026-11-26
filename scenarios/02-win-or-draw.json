@@ -1,0 +1,226 @@
+{
+  "title": "Win or draw",
+  "scenarios": [
+    {
+      "name": "X wins across then locks",
+      "lines": [
+        17,
+        18
+      ],
+      "steps": [
+        {
+          "id": "square-0",
+          "op": "tap"
+        },
+        {
+          "id": "square-3",
+          "op": "tap"
+        },
+        {
+          "id": "square-1",
+          "op": "tap"
+        },
+        {
+          "id": "square-4",
+          "op": "tap"
+        },
+        {
+          "id": "square-2",
+          "op": "tap"
+        },
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "X wins!"
+        },
+        {
+          "id": "square-5",
+          "op": "tap"
+        },
+        {
+          "id": "square-5",
+          "op": "shows",
+          "text": ""
+        },
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "X wins!"
+        }
+      ]
+    },
+    {
+      "name": "O wins down",
+      "lines": [
+        17,
+        18
+      ],
+      "steps": [
+        {
+          "id": "square-0",
+          "op": "tap"
+        },
+        {
+          "id": "square-1",
+          "op": "tap"
+        },
+        {
+          "id": "square-2",
+          "op": "tap"
+        },
+        {
+          "id": "square-4",
+          "op": "tap"
+        },
+        {
+          "id": "square-6",
+          "op": "tap"
+        },
+        {
+          "id": "square-7",
+          "op": "tap"
+        },
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "O wins!"
+        }
+      ]
+    },
+    {
+      "name": "X wins diagonal",
+      "lines": [
+        17,
+        18
+      ],
+      "steps": [
+        {
+          "id": "square-0",
+          "op": "tap"
+        },
+        {
+          "id": "square-1",
+          "op": "tap"
+        },
+        {
+          "id": "square-4",
+          "op": "tap"
+        },
+        {
+          "id": "square-2",
+          "op": "tap"
+        },
+        {
+          "id": "square-8",
+          "op": "tap"
+        },
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "X wins!"
+        }
+      ]
+    },
+    {
+      "name": "Full board draw",
+      "lines": [
+        19,
+        20
+      ],
+      "steps": [
+        {
+          "id": "square-0",
+          "op": "tap"
+        },
+        {
+          "id": "square-1",
+          "op": "tap"
+        },
+        {
+          "id": "square-2",
+          "op": "tap"
+        },
+        {
+          "id": "square-4",
+          "op": "tap"
+        },
+        {
+          "id": "square-3",
+          "op": "tap"
+        },
+        {
+          "id": "square-5",
+          "op": "tap"
+        },
+        {
+          "id": "square-7",
+          "op": "tap"
+        },
+        {
+          "id": "square-6",
+          "op": "tap"
+        },
+        {
+          "id": "square-8",
+          "op": "tap"
+        },
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "It's a draw!"
+        }
+      ]
+    },
+    {
+      "name": "Ninth mark wins",
+      "lines": [
+        17,
+        19,
+        20
+      ],
+      "steps": [
+        {
+          "id": "square-0",
+          "op": "tap"
+        },
+        {
+          "id": "square-1",
+          "op": "tap"
+        },
+        {
+          "id": "square-2",
+          "op": "tap"
+        },
+        {
+          "id": "square-3",
+          "op": "tap"
+        },
+        {
+          "id": "square-4",
+          "op": "tap"
+        },
+        {
+          "id": "square-5",
+          "op": "tap"
+        },
+        {
+          "id": "square-7",
+          "op": "tap"
+        },
+        {
+          "id": "square-6",
+          "op": "tap"
+        },
+        {
+          "id": "square-8",
+          "op": "tap"
+        },
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "X wins!"
+        }
+      ]
+    }
+  ]
+}
