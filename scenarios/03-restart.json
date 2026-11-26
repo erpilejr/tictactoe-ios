@@ -1,0 +1,154 @@
+{
+  "title": "Restart",
+  "scenarios": [
+    {
+      "name": "Restart mid game",
+      "lines": [
+        21,
+        22,
+        28
+      ],
+      "steps": [
+        {
+          "id": "square-0",
+          "op": "tap"
+        },
+        {
+          "id": "square-4",
+          "op": "tap"
+        },
+        {
+          "id": "restart-button",
+          "op": "tap"
+        },
+        {
+          "id": "square-0",
+          "op": "shows",
+          "text": ""
+        },
+        {
+          "id": "square-4",
+          "op": "shows",
+          "text": ""
+        },
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "X's turn"
+        },
+        {
+          "id": "square-4",
+          "op": "tap"
+        },
+        {
+          "id": "square-4",
+          "op": "shows",
+          "text": "X"
+        }
+      ]
+    },
+    {
+      "name": "Restart after win",
+      "lines": [
+        21,
+        22,
+        28
+      ],
+      "steps": [
+        {
+          "id": "square-0",
+          "op": "tap"
+        },
+        {
+          "id": "square-3",
+          "op": "tap"
+        },
+        {
+          "id": "square-1",
+          "op": "tap"
+        },
+        {
+          "id": "square-4",
+          "op": "tap"
+        },
+        {
+          "id": "square-2",
+          "op": "tap"
+        },
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "X wins!"
+        },
+        {
+          "id": "restart-button",
+          "op": "tap"
+        },
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "X's turn"
+        },
+        {
+          "id": "square-0",
+          "op": "shows",
+          "text": ""
+        },
+        {
+          "id": "square-5",
+          "op": "tap"
+        },
+        {
+          "id": "square-5",
+          "op": "shows",
+          "text": "X"
+        },
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "O's turn"
+        }
+      ]
+    },
+    {
+      "name": "Nothing saved on reopen",
+      "lines": [
+        28,
+        29
+      ],
+      "steps": [
+        {
+          "id": "square-0",
+          "op": "tap"
+        },
+        {
+          "id": "square-1",
+          "op": "tap"
+        },
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "X's turn"
+        },
+        {
+          "op": "restart"
+        },
+        {
+          "id": "square-0",
+          "op": "shows",
+          "text": ""
+        },
+        {
+          "id": "square-1",
+          "op": "shows",
+          "text": ""
+        },
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "X's turn"
+        }
+      ]
+    }
+  ]
+}
