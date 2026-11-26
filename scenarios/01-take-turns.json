@@ -1,0 +1,130 @@
+{
+  "title": "Take turns",
+  "scenarios": [
+    {
+      "name": "New game is empty",
+      "lines": [
+        11,
+        13,
+        14,
+        26,
+        28
+      ],
+      "steps": [
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "X's turn"
+        },
+        {
+          "id": "square-0",
+          "op": "shows",
+          "text": ""
+        },
+        {
+          "id": "square-4",
+          "op": "shows",
+          "text": ""
+        },
+        {
+          "id": "square-8",
+          "op": "shows",
+          "text": ""
+        },
+        {
+          "id": "square-9",
+          "op": "gone"
+        }
+      ]
+    },
+    {
+      "name": "Marks alternate",
+      "lines": [
+        13,
+        15,
+        26,
+        27
+      ],
+      "steps": [
+        {
+          "id": "square-4",
+          "op": "tap"
+        },
+        {
+          "id": "square-4",
+          "op": "shows",
+          "text": "X"
+        },
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "O's turn"
+        },
+        {
+          "id": "square-0",
+          "op": "tap"
+        },
+        {
+          "id": "square-0",
+          "op": "shows",
+          "text": "O"
+        },
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "X's turn"
+        },
+        {
+          "id": "square-8",
+          "op": "tap"
+        },
+        {
+          "id": "square-8",
+          "op": "shows",
+          "text": "X"
+        },
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "O's turn"
+        }
+      ]
+    },
+    {
+      "name": "Taken square ignored",
+      "lines": [
+        15,
+        16
+      ],
+      "steps": [
+        {
+          "id": "square-4",
+          "op": "tap"
+        },
+        {
+          "id": "square-4",
+          "op": "tap"
+        },
+        {
+          "id": "square-4",
+          "op": "shows",
+          "text": "X"
+        },
+        {
+          "id": "turn",
+          "op": "shows",
+          "text": "O's turn"
+        },
+        {
+          "id": "square-2",
+          "op": "tap"
+        },
+        {
+          "id": "square-2",
+          "op": "shows",
+          "text": "O"
+        }
+      ]
+    }
+  ]
+}
