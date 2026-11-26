@@ -15,6 +15,10 @@ struct RootView: View {
                     }
                 }
             }
+            Button("Restart") {
+                game = Game()
+            }
+            .accessibilityIdentifier("restart-button")
         }
         .padding()
     }
